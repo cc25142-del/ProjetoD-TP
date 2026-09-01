@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.System.out;
 
 public class BrincandoComMatematica {
 
@@ -33,3 +32,4 @@ public class BrincandoComMatematica {
             }
         } while (opcao != 0);
     }
+}
