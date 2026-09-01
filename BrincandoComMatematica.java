@@ -33,3 +33,42 @@ public class BrincandoComMatematica {
         } while (opcao != 0);
     }
 }
+private static int lerInteiro(String mensagem) {
+        int valor = 0;
+        boolean valido = false;
+        do {
+            System.out.print(mensagem);
+            try {
+                valor = Integer.parseInt(leitor.nextLine().trim());
+                valido = true;
+            } catch (NumberFormatException erroDeConversao) {
+                System.out.println("Entrada inválida! Digite um número inteiro.");
+            }
+        } while (!valido);
+        return valor;
+    }
+
+    private static int lerInteiroPositivo(String mensagem) {
+        int valor;
+        do {
+            valor = lerInteiro(mensagem);
+            if (valor <= 0)
+                System.out.println("O valor deve ser positivo!");
+        } while (valor <= 0);
+        return valor;
+    }
+
+    private static double lerDouble(String mensagem) {
+        double valor = 0;
+        boolean valido = false;
+        do {
+            System.out.print(mensagem);
+            try {
+                valor = Double.parseDouble(leitor.nextLine().trim().replace(",", "."));
+                valido = true;
+            } catch (NumberFormatException erroDeConversao) {
+                System.out.println("Entrada inválida! Digite um número.");
+            }
+        } while (!valido);
+        return valor;
+    }
