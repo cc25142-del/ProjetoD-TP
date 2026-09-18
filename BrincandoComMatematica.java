@@ -1,3 +1,6 @@
+// Isabella Cristine Santos Fernandes 25142
+// Emily Taysa de Sousa Alvez 25673
+
 import java.util.Scanner;
 
 public class BrincandoComMatematica {
